@@ -1,5 +1,5 @@
 import VersoManual
-import MetaprogrammingRecipes.Meta.Lean
+import MetaprogrammingRecipes.Lean
 
 open Verso.Genre Manual
 open Verso.Genre.Manual.InlineLean

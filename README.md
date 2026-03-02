@@ -1,25 +1,27 @@
-# Metaprogramming Recipes
+# Metaprogramming in Lean4 Cookbook
 
-This is a cookbook for Lean 4 metaprogramming, built using [Verso](https://github.com/leanprover/verso).
+A cookbook for Metaprogramming in Lean4 containing code snippets to help you code. Visit the [website](https://leanprover-cookbook.github.io/lean-metaprogramming-recipes) to read the cookbook.
 
-To build it, run:
-```
-$ lake exe metaprogramming-recipes
-```
+> [!Important]
+> This repository is under development and we are working hard to add more code snippets to it.
+> If you have any code snippets that you would like to contribute, please feel free to create a pull request.
 
-The output will be in `_out/html-multi`.
+> ![Note]
+> This repository is not a book and it may not always explain concepts particular to a concept. It is just a collection of code snippets that can help you in your coding journey. It is recommended that you clear your concepts from other books and resources of Lean4.
 
-## Deployment
+## Getting Started
 
-The documentation is automatically built and deployed to GitHub Pages via GitHub Actions on every push to the `main` branch. 
+If you are new to Lean4 and metaprogramming, we recommend you to start with basics of Lean4 clearing your basics from resources like MIL, TPIL, FPIL, etc. This will help you understand the code snippets in this repository better. Once you are comfortable with Lean4 basics, you should then start with Metaprogramming in Lean4.
 
-To ensure deployment works:
-1. Go to your repository settings.
-2. Select **Pages** from the sidebar.
-3. Under **Build and deployment > Source**, ensure **GitHub Actions** is selected.
+For the audience familiar with Lean4, you can directly visit the website, and search for the code snippets that you are looking for. You can also contribute to the repository by adding new code snippets or improving existing ones.
 
-This cookbook is written in the `Manual` genre. It uses the same version of Lean for the example code as it does for Verso itself.
+## Contributing
 
-# Code Samples
+This repository is very much under development and we would welcome your contributions. This contributions must follow the [contributing guidelines](CONTRIBUTING.md) and your code should be specific format as mentioned in the [Cookbook guidelines](COOKBOOK_GUIDELINES.md).
 
-This project demonstrates how to extract Lean modules from inline examples. This extension uses [a custom `savedLean` code block](MetaprogrammingRecipes/Meta/Lean.lean) to indicate that an example should be saved. At elaboration time, a custom block element saves the original filename and the contents of the code block. Then, in [`Main.lean`](Main.lean), a custom build step `buildExercises` traverses the entire book prior to HTML generation, collecting the blocks. The collected blocks are assembled into files and written to the `example-code` subdirectory of the output.
+Please create a pull request with your code snippet and we will review it as soon as possible.
+
+## Acknowledgements
+
+This is an initiative to help everyone learn metaprogramming in Lean4 and we would like to thank everyone from the Lean4 community who has contributed to this repository.
+Special thanks to [Professor Siddhartha Gadgil](https://math.iisc.ac.in/~gadgil), IISc Bengaluru for his idea and support in creating this repository.

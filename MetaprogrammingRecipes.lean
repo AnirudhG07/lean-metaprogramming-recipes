@@ -1,10 +1,8 @@
 import VersoManual
-import MetaprogrammingRecipes.Meta.Lean
+import MetaprogrammingRecipes.Lean
 
--- Cookbook Chapters
-import MetaprogrammingRecipes.Expressions
-import MetaprogrammingRecipes.Commands
-import MetaprogrammingRecipes.Tactics
+-- Cookbook Chapters Aggregator
+import MetaprogrammingRecipes.Chapters
 
 -- This gets access to most of the manual genre (which is also useful for textbooks)
 open Verso.Genre Manual
@@ -27,17 +25,4 @@ authors := ["Anirudh Gupta"]
 
 Welcome to the *Lean 4 Metaprogramming Recipes*, a practical guide to extending the Lean theorem prover. This cookbook provides modular, utility-based examples of how to work with Lean's metaprogramming framework.
 
-{include 1 MetaprogrammingRecipes.Expressions}
-
-{include 1 MetaprogrammingRecipes.Commands}
-
-{include 1 MetaprogrammingRecipes.Tactics}
-
-
-# Index
-%%%
-number := false
-tag := "index"
-%%%
-
-{theIndex}
+{include 1 MetaprogrammingRecipes.Chapters}
