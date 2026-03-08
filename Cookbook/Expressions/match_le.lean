@@ -35,6 +35,7 @@ Now, to see this function in action we write an elaborator that fetches the main
 
 ```lean
 elab "match_le" : tactic => do
+  withMainContext do
   let goal ← getMainTarget
   match (← match_le (goal)) with
   | some (a, b) => logInfo m!"It is an inequality where
