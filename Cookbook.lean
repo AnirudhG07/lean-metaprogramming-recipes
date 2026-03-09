@@ -38,24 +38,17 @@ and experienced programmers looking to deepen their understanding of
 Lean 4.
 
 -- All cookbook chapters should be below this --
+-- Do not mention chapters below Example and Index --
 
 {include 1 Cookbook.Expressions}
 
 {include 1 Cookbook.Syntax}
 
-{include 1 Cookbook.workingWithFilesAndExternalProgramsNotMetaprogramming}
-
-{include 1 Cookbook.workingWithSyntax}
-
-{include 1 Cookbook.workingWithExpressions}
-
-{include 1 Cookbook.extendingSyntax}
+{include 1 Cookbook.FileSystem}
 
 {include 1 Cookbook.maintainingState}
 
-{include 1 Cookbook.workingWithTactics}
-
--- Do not mention any recipes below this (Except Example and Index) --
+{include 1 Cookbook.Tactics}
 
 {include 1 Cookbook.Example}
 

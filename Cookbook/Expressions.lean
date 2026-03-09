@@ -1,10 +1,25 @@
 import VersoManual
-import Cookbook.Expressions.Expressions
+import Cookbook.Expressions.DefiningExpressions
 import Cookbook.Expressions.match_le
+import Cookbook.Expressions.displayingExpressionsLoginfoEtc
+import Cookbook.Expressions.syntaxStringsFromExpressions
+import Cookbook.Expressions.matchingExpressionsExactMatch
+import Cookbook.Expressions.matchingExpressionsWithSolving
+import Cookbook.Expressions.buildingExpressionsForFunctionApplications
+import Cookbook.Expressions.buildingExpressionsWithVariablesFunctionsAndDependentFunctionTypes
+import Cookbook.Expressions.usingTrythisToIntroduceExpressionsEgContentsOfAFile
 
 open Verso.Genre Manual
 
 #doc (Manual) "Expressions" =>
 
-{include 1 Cookbook.Expressions.Expressions}
+{include 1 Cookbook.Expressions.DefiningExpressions}
 {include 1 Cookbook.Expressions.match_le}
+
+{include 1 Cookbook.Expressions.displayingExpressionsLoginfoEtc}
+{include 1 Cookbook.Expressions.syntaxStringsFromExpressions}
+{include 1 Cookbook.Expressions.matchingExpressionsExactMatch}
+{include 1 Cookbook.Expressions.matchingExpressionsWithSolving}
+{include 1 Cookbook.Expressions.buildingExpressionsForFunctionApplications}
+{include 1 Cookbook.Expressions.buildingExpressionsWithVariablesFunctionsAndDependentFunctionTypes}
+{include 1 Cookbook.Expressions.usingTrythisToIntroduceExpressionsEgContentsOfAFile}

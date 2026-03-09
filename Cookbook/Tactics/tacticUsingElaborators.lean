@@ -31,7 +31,8 @@ example : 847 + 153 = 1000 := by sorry
 Under the hood, the sorry tactic works by creating a term of the main goal's type using the sorryAx axiom. You can inspect these internal components directly:
 
 ```lean
-#check sorryAx -- sorryAx.{u} (α : Sort u) (synthetic :  Bool) : α
+#check sorryAx
+-- sorryAx.{u} (α : Sort u) (synthetic :  Bool) : α
 ```
 Now, let's write a custom tactic called `toDo` using `elab` and `sorryAx`. The `toDo` tactic will close the main goal just like `sorry`, but it will also accept a string argument to log a custom reminder to the Infoview.
 
