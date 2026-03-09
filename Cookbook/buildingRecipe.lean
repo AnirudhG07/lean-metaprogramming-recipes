@@ -22,6 +22,8 @@ number := false
 This chapter demonstrates the standard layout and features available for cookbook entries. Make sure to visit the website to see how the documentation is rendered and to get a better sense of how to structure your recipe.
 You can use the template recipe  as a starting point.
 
+This cookbook is built using Verso, hence understanding how to write in Verso is essential. Please go through this page to get familiar with writing styled documentation in Verso. You can also refer other recipes for the same or checkout the [Verso Manual](https://verso-user-manual.netlify.app/) for more detailed information.
+
 # Adding Sections
 
 Use the `#` symbol for top-level section like below. Each chapter should start with a clear problem statement and a summary of the solution. Just like `Introduction` here.

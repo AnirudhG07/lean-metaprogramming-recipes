@@ -8,8 +8,12 @@ This repository does not contain any recipes for proving in mathematics, it is o
 > This repository is under development and we are working hard to add more recipes to it.
 > If you have any recipes that you would like to contribute, please feel free to create a pull request.
 
-> ![Note]
+> [!Note]
 > This repository is not a book and it may not always explain concepts particular to a concept. It is just a collection of recipes that can help you in your coding journey. It is recommended that you clear your concepts from other books and resources of Lean4.
+
+## Motivation for Cookbook
+
+It's like a cheatsheet, IT IS VERY USEFUL!
 
 ## Getting Started
 
