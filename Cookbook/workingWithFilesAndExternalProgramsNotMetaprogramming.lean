@@ -1,0 +1,15 @@
+import VersoManual
+import Cookbook.WorkingWithFilesAndExternalProgramsNotMetaprogramming.readingFromAFile
+import Cookbook.WorkingWithFilesAndExternalProgramsNotMetaprogramming.writingToAFile
+import Cookbook.WorkingWithFilesAndExternalProgramsNotMetaprogramming.appending
+import Cookbook.WorkingWithFilesAndExternalProgramsNotMetaprogramming.runningAnExternalProgramEgCurl
+import Cookbook.WorkingWithFilesAndExternalProgramsNotMetaprogramming.creatingDirectoriesIfTheyDontExit
+
+open Verso.Genre Manual
+
+#doc (Manual) "Working with files and external programs (not metaprogramming)" =>
+{include 1 Cookbook.WorkingWithFilesAndExternalProgramsNotMetaprogramming.readingFromAFile}
+{include 1 Cookbook.WorkingWithFilesAndExternalProgramsNotMetaprogramming.writingToAFile}
+{include 1 Cookbook.WorkingWithFilesAndExternalProgramsNotMetaprogramming.appending}
+{include 1 Cookbook.WorkingWithFilesAndExternalProgramsNotMetaprogramming.runningAnExternalProgramEgCurl}
+{include 1 Cookbook.WorkingWithFilesAndExternalProgramsNotMetaprogramming.creatingDirectoriesIfTheyDontExit}

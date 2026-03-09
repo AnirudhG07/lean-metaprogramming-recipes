@@ -1,0 +1,19 @@
+import VersoManual
+import Cookbook.WorkingWithExpressions.displayingExpressionsLoginfoEtc
+import Cookbook.WorkingWithExpressions.syntaxStringsFromExpressions
+import Cookbook.WorkingWithExpressions.matchingExpressionsExactMatch
+import Cookbook.WorkingWithExpressions.matchingExpressionsWithSolving
+import Cookbook.WorkingWithExpressions.buildingExpressionsForFunctionApplications
+import Cookbook.WorkingWithExpressions.buildingExpressionsWithVariablesFunctionsAndDependentFunctionTypes
+import Cookbook.WorkingWithExpressions.usingTrythisToIntroduceExpressionsEgContentsOfAFile
+
+open Verso.Genre Manual
+
+#doc (Manual) "Working with expressions" =>
+{include 1 Cookbook.WorkingWithExpressions.displayingExpressionsLoginfoEtc}
+{include 1 Cookbook.WorkingWithExpressions.syntaxStringsFromExpressions}
+{include 1 Cookbook.WorkingWithExpressions.matchingExpressionsExactMatch}
+{include 1 Cookbook.WorkingWithExpressions.matchingExpressionsWithSolving}
+{include 1 Cookbook.WorkingWithExpressions.buildingExpressionsForFunctionApplications}
+{include 1 Cookbook.WorkingWithExpressions.buildingExpressionsWithVariablesFunctionsAndDependentFunctionTypes}
+{include 1 Cookbook.WorkingWithExpressions.usingTrythisToIntroduceExpressionsEgContentsOfAFile}

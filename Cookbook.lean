@@ -17,7 +17,7 @@ set_option pp.rawOnError true
 
 #doc (Manual) "Lean 4 (Meta)programming Cookbook" =>
 
-Welcome to the *Lean 4 (Meta)programming Cookbook*, a collection of recipes and examples for 
+Welcome to the *Lean 4 (Meta)programming Cookbook*, a collection of recipes and examples for
 programming and metaprogramming in Lean4. This cookbook provides a wide range of recipes, from basic to advanced which you can easily understand and integrate in your code.
 
 If you are new to Lean 4, we recommend you to start with the basics
@@ -40,3 +40,15 @@ Lean 4.
 {include 1 Cookbook.Example}
 
 {include 1 Cookbook.Index}
+
+{include 1 Cookbook.workingWithFilesAndExternalProgramsNotMetaprogramming}
+
+{include 1 Cookbook.workingWithSyntax}
+
+{include 1 Cookbook.workingWithExpressions}
+
+{include 1 Cookbook.extendingSyntax}
+
+{include 1 Cookbook.maintainingState}
+
+{include 1 Cookbook.workingWithTactics}
