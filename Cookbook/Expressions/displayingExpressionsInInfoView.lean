@@ -17,4 +17,3 @@ number := false
 %%%
 
 {index}[Displaying expressions (logInfo, etc.)]
-
