@@ -93,6 +93,18 @@ An example term is `` {lean}`[1, 2].map (· + 1)` ``.
 
 When rendered, hovering over {name}`Nat` will show its definition and docstring. Hovering over parts of {lean}`[1, 2].map (· + 1)` will show types for the list, the map function, and the lambda abstraction.
 
+## Docstrings
+
+Verso provides a way to include docstrings for Lean definitions directly in the documentation. This is done using the `{docstring}` role(see more information [here](https://verso.lean-lang.org/doc/latest/Manuals-and-Books/#docstrings).
+
+```
+{docstring Nat.add}
+```
+
+which will look like this:
+
+{docstring Nat.add}
+
 ## Errors and Warnings
 
 Expected errors must be explicitly marked with `+error`. If the error message does not match exactly, the documentation build may fail.
