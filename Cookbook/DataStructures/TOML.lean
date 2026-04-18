@@ -22,7 +22,7 @@ number := false
 ::: contributors
 :::
 
-`Lake.Toml` is commonly used for configuration files. Lean 4 provides a module for working with `Lake.Toml`. This chapter covers how to create, manipulate, and persist `Lake.Toml` data in Lean.
+`Toml` is commonly used for configuration files. This chapter covers how to create, manipulate, and persist `Toml` data in Lean4 using `Lake.Toml`. 
 
 Working with TOML in Lean requires understanding two primary types:
 

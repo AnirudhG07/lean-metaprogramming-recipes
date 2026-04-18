@@ -14,6 +14,7 @@ set_option pp.rawOnError true
 %%%
 tag := "file-permissions"
 number := false
+htmlSplit := .never
 %%%
 
 ::: contributors
