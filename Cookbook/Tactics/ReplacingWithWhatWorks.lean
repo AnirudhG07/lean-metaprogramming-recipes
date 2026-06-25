@@ -23,9 +23,15 @@ htmlSplit := .never
 
 {index}[Replacing with What Works]
 
-It is a common pattern that tactics involve a search but, if a search is succesful, we want to narrow down the search to a specific tactic that we know works. For example, we may want to check if a tactic sequence can be applied to the main target, and if so, apply a specific tactic that we know works. We can achieve this by using the {lean}`TryThis.addSuggestion` function, which adds a suggestion to try a specific tactic at a given syntax node.
+A common tactic pattern is to *search* over possible completions and,
+once one succeeds, emit a {ref "try-this-suggestions"}[Try this] suggestion
+so the user can lock in the answer and avoid re-running the search on every
+compilation. The API details for {lean}`TryThis.addSuggestion` are covered in
+{ref "try-this-suggestions"}[Try This Suggestions].
 
-Here we use the function defined in the recipe {ref "checking-tactics"}[Checking Tactics] and build a tactic that checks if a given tactic sequence can be applied to the main target, and if so, runs the tactic and adds a suggestion to try the first successful tactic in the sequence.
+Here we combine {lean}`TryThis.addSuggestion` with the `checkTactic` helper
+from {ref "checking-tactics"}[Checking Tactics]: the tactic `check_tactic?`
+tries each candidate in a list and suggests the first one that closes the goal.
 
 ```lean
 syntax (name:= check_tactic) "check_tactic?"
@@ -36,7 +42,8 @@ syntax (name:= check_tactic) "check_tactic?"
   match stx with
   | `(tactic| check_tactic? [$tacs,*]) =>
     for tac in tacs.getElems do
-      let n? ← checkTactic (← getMainTarget) tac
+      let n? ← checkTactic
+        (← getMainTarget) tac
       match n? with
       | some n =>
         if n = 0 then

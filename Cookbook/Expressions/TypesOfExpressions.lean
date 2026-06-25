@@ -12,6 +12,7 @@ set_option pp.rawOnError true
 %%%
 tag := "kinds-of-expressions"
 number := false
+htmlSplit := .never
 %%%
 
 ::: contributors
@@ -90,4 +91,3 @@ These are given by the `proj` constructor and represent projections from structu
 ## `mdata` expressions
 
 These are given by the `mdata` constructor and represent expressions with metadata. They consist of a metadata object and an expression. Metadata can be used to attach additional information to an expression, such as source location information or annotations.
-

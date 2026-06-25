@@ -13,6 +13,7 @@ import Cookbook.Index
 import Cookbook.BuildingRecipe
 import Cookbook.Elaboration
 import Cookbook.Infoview
+import Cookbook.EditorIntegration
 import Cookbook.CookbookContributors
 
 open Verso.Genre Manual
@@ -67,6 +68,8 @@ Thanks to all the [contributors(view full list)](Cookbook-Contributors/) who hav
 {include 1 Cookbook.Overview}
 
 {include 1 Cookbook.Infoview}
+
+{include 1 Cookbook.EditorIntegration}
 
 {include 1 Cookbook.Syntax}
 
